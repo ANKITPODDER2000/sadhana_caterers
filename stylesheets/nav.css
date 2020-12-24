@@ -1,0 +1,210 @@
+.fixedbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+    z-index: 11;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    transform: translateX(0);
+    box-shadow: none;
+}
+.fixedbar.active{
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 0 15px #0009;
+    /* backdrop-filter: blur(4px); */
+}
+.fixedbar div a{
+    color: #fff;
+    text-decoration: none;
+}
+.fixedbar div a h1{
+    font-size: 22px;
+    font-weight: bold;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+@media screen and (max-width : 400px){
+    .fixedbar div a h1{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width : 345px){
+    .fixedbar div a h1{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width : 319px){
+    .fixedbar div a h1{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width : 296px){
+    .fixedbar div a h1{
+        font-size: 11px;
+    }
+}
+.fixedbar div a h1 span{
+    color: #ff0054;
+    font-size: 26px;
+}
+.fixedbar ul{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    list-style: none;
+}
+@media screen and (max-width:970px){
+    .fixedbar ul{
+        display: none;
+        width: 0;
+    }
+}
+.fixedbar ul li{
+    margin: 0 10px;
+}
+.fixedbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.fixedbar.fixedbar.active  div a h1{
+    color: #111;
+}
+.fixedbar.active ul li a{
+    color: #111;
+}
+.fixedbar.active ul li a:hover{
+    color:   #ff0054;
+}
+/* Handberger */
+.fixedbar handberger{
+    position: relative;
+    width: 35px;
+    height: 24px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+    width: 0;
+    display: none;
+}
+@media screen and (max-width:970px){
+    .fixedbar handberger{
+        width: 35px;
+        display: flex;
+    }
+}
+.fixedbar handberger span{
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 2px !important;
+    background: #fff;
+    margin: 3px 0;
+    transition: 0.5s;
+}
+.fixedbar.active handberger span{
+    background: #111;
+}
+.fixedbar handberger span:nth-child(2){
+    width: calc(100% * 0.7);
+}
+.fixedbar handberger span:nth-child(3){
+    width: calc(100% * 0.4);
+}
+.fixedbar handberger:hover span,
+.fixedbar.slideLeft handberger span{
+    width: 100%;
+}
+.fixedbar.slideLeft handberger span:nth-child(1){
+    transform: translateY(7.5px) rotateZ(45deg);
+}
+.fixedbar.slideLeft handberger span:nth-child(2){
+    transform: translateX(-20px);
+    opacity: 0;
+}
+.fixedbar.slideLeft handberger span:nth-child(3){
+    transform: translateY(-7.5px) rotateZ(-45deg);
+}
+
+
+/*==================================All about fixedbar==================================*/
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    width: 240px;
+    transform: translateX(240px);
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: #ff0054;
+}
+@media screen and (max-width : 970px){
+    nav{
+        display: flex;
+    }
+    nav ul{
+        position: relative;
+        width: 100%;
+        padding: 0 30px;
+        list-style-type: none;
+    }
+    nav ul li a{
+        position: relative;
+        text-decoration: none;
+        color: white;
+        margin: 12px 0 !important;
+        display: inline-block;
+    }
+    nav ul li a::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -5px;
+        width: 110%;
+        height: 1.5px;
+        background: #fff;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: 0.5s;
+    }
+    nav ul li.active a::before{
+        transform: scaleX(1);
+    }
+    nav ul li a:hover::before{
+        transform: scaleX(1);
+    }
+    nav.togglebar{
+        transform: translateX(0);
+    }
+    .main{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateX(0px);
+        transition: 0.5s;
+    }
+    .main.togglebar{
+        transform: translateX(-240px);
+    }
+    .fixedbar.togglebar{
+        transform: translateX(-240px);
+    }
+}

@@ -7,9 +7,51 @@
     <!-- This is fontawsome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/nav.css">
     <title>SADHANA CATERERS.</title>
 </head>
 <body>
+    <!--FixedBar For Top of the Page-->
+    <div class="fixedbar">
+        <div>
+            <a href="#">
+                <h1><span>S</span>adhana <span>C</span>ateres <span>.</span></h1>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Expert</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <handberger onclick="handbergerclick(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </handberger>
+    </div>
+
+    <!--NavbarSetUp-->
+    <nav>
+        <div class="links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Expert</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="marker"></div>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
     <div class="main">
         <section class="home" id="home">
             <h1>Always Choose Good</h1>
@@ -22,6 +64,9 @@
             </div>
             <a class="btn" href="#">Our Menu</a>
         </section>
+        <section style="width: 100%;height: 500px;"></section>
     </div>
+
+    <script src="./javascript/nav.js"></script>
 </body>
 </html>
