@@ -155,11 +155,13 @@
             <p><a href="#">Open this location in map : <i class="fas fa-map-marker-alt"></i></a></p>
             <p><i class="fas fa-phone-alt"></i> : <a href="tel:9143131636">9143131636</a> / <a href="tel:9143194592">9143194592</a></p>
             <div class="container">
-                <form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
+                    onload="if(submitted){window.location('/')}"></iframe>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7vO7k8Vz6ljNNhDK9vIhlrE3oobReoY3cYwhsMBvj_SoKgA/formResponse" target="hidden_iframe" onsubmit="formsubmit()">
                     <h1>Send Message</h1>
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="text" name="" id="" placeholder="Email or Phone No">
-                    <textarea placeholder="Message or Feedback"></textarea>
+                    <input type="text" name="entry.94450431" id="" placeholder="Name" value="">
+                    <input type="text" name="entry.437217449" id="" placeholder="Email or Phone No" value="">
+                    <textarea name="entry.1589624765" placeholder="Message or Feedback" value=""></textarea>
                     <button>Send</button>
                 </form>
             </div>
@@ -170,5 +172,13 @@
     </div>
 
     <script src="./javascript/nav.js"></script>
+    <script>
+        const formsubmit = ()=>{
+            // document.querySelector("#contact > div > form > input[type=text]:nth-child(2)").value = "";
+            // document.querySelector("#contact > div > form > input[type=text]:nth-child(3)").value = "";
+            // document.querySelector("#contact > div > form > textarea").value = "";
+            return true;
+        }
+    </script>
 </body>
 </html>
