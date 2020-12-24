@@ -1,0 +1,77 @@
+.test{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 60px;
+    background: url("../images/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.test h1{
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    color: #fff;
+    word-spacing: 6px;
+}
+.test h1 span{
+    font-size: 50px;
+    color: #ff0054;
+}
+.test p{
+    color: #fff;
+    text-align: center;
+}
+.test .container{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.test .container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #000;
+    margin: 20px;
+}
+.test .container .box img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.test .container .box p{
+    color: #000000;
+    margin: 20px 0 0px;
+}
+.test .container .box p.name{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+@media screen and (max-width:520px){
+    .test h1{
+        font-size: 24px;
+    }
+    .test h1 span{
+        font-size: 35px;
+    }
+    .test .container{
+        padding-bottom: 40px;
+        width: 100%;
+    }
+}
