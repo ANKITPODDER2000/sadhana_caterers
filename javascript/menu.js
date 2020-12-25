@@ -20,3 +20,14 @@ const btn_click = e => {
         display = "none";
     changeDisplayType();
 }
+
+const imageclick = (imgname , title) => {
+    let img_file = "./images/menu/" + imgname;
+    document.querySelector("#img-con > h1").innerHTML = title;
+    $("body > div.img-show-container").fadeToggle();
+    $("#img-con > img").attr('src' , img_file)
+}
+
+const closethis = () => {
+    $("body > div.img-show-container").fadeToggle();
+}

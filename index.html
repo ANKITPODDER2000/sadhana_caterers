@@ -54,6 +54,14 @@
         </div>
     </nav>
 
+    <!-- Show Click Images -->
+    <div class="img-show-container">
+        <i class="fas fa-times-circle" onclick="closethis()"></i>
+        <div id="img-con">
+            <h1>Prawn Malaikari</h1>
+            <img src="" alt="">
+        </div>
+    </div>
 
 
 
@@ -93,53 +101,53 @@
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <div class="container">
                 <div class="img">
-                    <img src="./images/menu/mutton kasha.jpg" alt="">
+                    <img src="./images/menu/mutton kasha.jpg" onclick="imageclick('mutton kasha.jpg' , 'Mutton Kasha')">
                     <p>Mutton Kasha</p>
                 </div>
                 <div class="img">
-                    <img src="./images/menu/navaratna kari.jpg" alt="">
+                    <img src="./images/menu/navaratna kari.jpg" onclick="imageclick('navaratna kari.jpg' , 'Navaratna Korma')">
                     <p>Navaratna Korma</p>
                 </div>
                 <div class="img">
-                    <img src="./images/menu/panner2.jpg" alt="">
+                    <img src="./images/menu/panner2.jpg" onclick="imageclick('panner2.jpg' , 'Paneer Butter Masala')">
                     <p>Paneer Butter Masala</p>
                 </div>
 
                 <div class="img">
-                    <img src="./images/menu/salad.JPG" alt="">
+                    <img src="./images/menu/salad.JPG" onclick="imageclick('salad.JPG' , 'Pasta Counter')">
                     <p>Pasta Counter</p>
                 </div>
                 <div class="img">
-                    <img src="./images/menu/hotsaladbar.jpg" alt="" style="object-fit: contain;">
+                    <img src="./images/menu/hotsaladbar.jpg" onclick="imageclick('hotsaladbar.jpg')" style="object-fit: contain , 'Hot Salad Bar';">
                     <p>Hot Salad Bar</p>
                 </div>
                 <div class="img" id="img_last">
-                    <img src="./images/menu/prawn.jpg" alt="">
+                    <img src="./images/menu/prawn.jpg" onclick="imageclick('prawn.jpg' , 'Prawn Malaikari')">
                     <p>Prawn Malaikari</p>
                 </div>
                 <!-- Hide this pics Initially -->
                 <div class="img hide">
-                    <img src="./images/menu/fry.jpg" alt="">
+                    <img src="./images/menu/fry.jpg" onclick="imageclick('fry.jpg' , 'Fish Butter Fry')">
                     <p>Fish Butter Fry</p>
                 </div>
                 <div class="img hide">
-                    <img src="./images/menu/chicken.jpg" alt="">
+                    <img src="./images/menu/chicken.jpg" onclick="imageclick('chicken.jpg' , 'Chicken Rezala')">
                     <p>Chicken Rezala</p>
                 </div>
                 <div class="img hide">
-                    <img src="./images/menu/mocktail.jpg" alt="">
+                    <img src="./images/menu/mocktail.jpg" onclick="imageclick('mocktail.jpg' , 'Mocktail Counter')">
                     <p>Mocktail Counter</p>
                 </div>
                 <div class="img hide">
-                    <img src="./images/menu/pan.jpg" alt="">
+                    <img src="./images/menu/pan.jpg" onclick="imageclick('pan.jpg' , 'Pan')">
                     <p>Pan</p>
                 </div>
                 <div class="img hide">
-                    <img src="./images/menu/tandoor.jpg">
+                    <img src="./images/menu/tandoor.jpg" onclick="imageclick('tandoor.jpg' , 'Chicken Tandoor')">
                     <p>Chicken Tandoor</p>
                 </div>
                 <div class="img hide">
-                    <img src="./images/menu/chatni.jpg" alt="">
+                    <img src="./images/menu/chatni.jpg" onclick="imageclick('chatni.jpg' , 'Chatni')">
                     <p>Chatni</p>
                 </div>
             </div>
@@ -197,6 +205,7 @@
 
     <script src="./javascript/nav.js"></script>
     <script src="./javascript/menu.js"></script>
+    <script src="./javascript/jquery.js"></script>
     <script>
         const formsubmit = ()=>{
             // document.querySelector("#contact > div > form > input[type=text]:nth-child(2)").value = "";
