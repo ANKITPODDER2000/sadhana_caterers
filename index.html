@@ -86,7 +86,7 @@
                 considerable advices in quality.
                 </p>
             </div>
-            <img src="./images/about.jpg" alt="about_us">
+            <img src="./images/about1.jpg" alt="about_us">
         </section>
         <section class="menu" id="menu">
             <h1>Our <span>M</span>enu</h1>
@@ -98,11 +98,11 @@
                 </div>
                 <div class="img">
                     <img src="./images/menu/navaratna kari.jpg" alt="">
-                    <p>Navaratna Kari</p>
+                    <p>Navaratna Korma</p>
                 </div>
                 <div class="img">
                     <img src="./images/menu/panner2.jpg" alt="">
-                    <p>Panner Masla</p>
+                    <p>Paneer Butter Masala</p>
                 </div>
 
                 <div class="img">
@@ -110,15 +110,40 @@
                     <p>Pasta Counter</p>
                 </div>
                 <div class="img">
-                    <img src="./images/menu/tandoor.jpg" alt="">
-                    <p>Chicken Tandoor</p>
+                    <img src="./images/menu/hotsaladbar.jpg" alt="" style="object-fit: contain;">
+                    <p>Hot Salad Bar</p>
                 </div>
-                <div class="img">
+                <div class="img" id="img_last">
                     <img src="./images/menu/prawn.jpg" alt="">
                     <p>Prawn Malaikari</p>
                 </div>
+                <!-- Hide this pics Initially -->
+                <div class="img hide">
+                    <img src="./images/menu/fry.jpg" alt="">
+                    <p>Fish Butter Fry</p>
+                </div>
+                <div class="img hide">
+                    <img src="./images/menu/chicken.jpg" alt="">
+                    <p>Chicken Rezala</p>
+                </div>
+                <div class="img hide">
+                    <img src="./images/menu/mocktail.jpg" alt="">
+                    <p>Mocktail Counter</p>
+                </div>
+                <div class="img hide">
+                    <img src="./images/menu/pan.jpg" alt="">
+                    <p>Pan</p>
+                </div>
+                <div class="img hide">
+                    <img src="./images/menu/tandoor.jpg">
+                    <p>Chicken Tandoor</p>
+                </div>
+                <div class="img hide">
+                    <img src="./images/menu/chatni.jpg" alt="">
+                    <p>Chatni</p>
+                </div>
             </div>
-            <a  class="view-all" href="#">View All</a>
+            <a  class="view-all" href="#img_last" onclick="btn_click(this)">View All</a>
         </section>
         <section class="test" id="test">
             <h1>They <span>S</span>aid About Us</h1>
@@ -126,25 +151,23 @@
             <div class="container">
                 <div class="box">
                     <img src="./images/review/rev1.jpg">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                         Porro laborum nam aliquam nulla hic numquam. Repellat officia ut id 
-                         vitae.
+                    <p>Good Food went above and beyond with us. Willing to meet multiple times to ensure everything was as we hoped and
+                    delivering EXCEPTIONAL food for our wedding. They did everything and then some to ensure we were properly fed and
+                    enjoyed ourselves.
                     </p>
-                    <p class="name">~ Name</p>
+                    <p class="name">~ Priya Saha Podder</p>
                 </div>
                 <div class="box">
                     <img src="./images/review/rev2.jpg">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Porro laborum nam aliquam nulla hic numquam. Repellat officia ut id
-                        vitae.
+                    <p>The food at my wedding was amazing! Really yummy. My guests raved about the food. They even gave us a few leftovers. Amy
+                    was super helpful! Highly recommend Good Food Events + Catering.
                     </p>
-                    <p class="name">~ Name</p>
+                    <p class="name">~ Ankit Podder</p>
                 </div>
                 <div class="box">
                     <img src="./images/review/rev3.jpg">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Porro laborum nam aliquam nulla hic numquam. Repellat officia ut id
-                        vitae.
+                    <p>The food at my wedding was amazing! Really yummy. My guests raved about the food. They even gave us a few leftovers. Amy
+                    was super helpful! Highly recommend Good Food Events + Catering.
                     </p>
                     <p class="name">~ Name</p>
                 </div>
@@ -153,7 +176,7 @@
         <section class="contact" id="contact">
             <h1><span>C</span>ontact Us</h1>
             <p>413 Green Park , Lake Town , Block A , Kolkata : 700055</p>
-            <p><a href="#">Open this location in map : <i class="fas fa-map-marker-alt"></i></a></p>
+            <p><a href="https://goo.gl/maps/gn4YtYgcBVdfNBr98" target="_blank">Open this location in map : <i class="fas fa-map-marker-alt"></i></a></p>
             <p><i class="fas fa-phone-alt"></i> : <a href="tel:9143131636">9143131636</a> / <a href="tel:9143194592">9143194592</a></p>
             <div class="container">
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
@@ -173,6 +196,7 @@
     </div>
 
     <script src="./javascript/nav.js"></script>
+    <script src="./javascript/menu.js"></script>
     <script>
         const formsubmit = ()=>{
             // document.querySelector("#contact > div > form > input[type=text]:nth-child(2)").value = "";
