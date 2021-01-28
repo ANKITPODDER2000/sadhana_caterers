@@ -19,6 +19,9 @@
     box-shadow: 0 0 15px #0009;
     /* backdrop-filter: blur(4px); */
 }
+body.night .fixedbar.active{
+    box-shadow: 0 0 15px #fff9;
+}
 .fixedbar div a{
     color: #fff;
     text-decoration: none;
@@ -78,11 +81,14 @@
     font-size: 18px;
     transition: 0.5s;
 }
-.fixedbar.fixedbar.active  div a h1{
+.fixedbar.active  div a h1{
     color: #111;
 }
 .fixedbar.active ul li a{
     color: #111;
+}
+body.night .fixedbar.active ul li a{
+    color: #fff;
 }
 .fixedbar.active ul li a:hover{
     color:   #ff0054;
@@ -207,4 +213,16 @@ nav{
     .fixedbar.togglebar{
         transform: translateX(-240px);
     }
+}
+body.night .fixedbar.active{
+    background: #000;
+}
+body.night .fixedbar.active  div a h1{
+    color: #fff;
+}
+body.night .fixedbar.active handberger span{
+    background: #fff;
+}
+body > div.fixedbar > ul > li:nth-child(6) > a > i{
+    width: 18px;
 }

@@ -18,8 +18,12 @@
     <!-- Stylesheet for contact -->
     <link rel="stylesheet" href="./stylesheets/contact.css">
     <title>SADHANA CATERERS.</title>
+    <meta name="theme-color" content="#ff0054"/>
+    <meta name="msapplication-navbutton-color" content="#ff0054"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes"/>
 </head>
-<body>
+<body class="light">
     <!--FixedBar For Top of the Page-->
     <div class="fixedbar">
         <div>
@@ -33,6 +37,7 @@
             <li><a href="#menu">Menu</a></li>
             <li><a href="#test">Testimonial</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li onclick="changeMode()"><a href="###">Mode &nbsp:&nbsp <i class="fas fa-lightbulb"></i></a></li>
         </ul>
         <handberger onclick="handbergerclick(this)">
             <span></span>
@@ -50,6 +55,7 @@
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#test">Testimonial</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li onclick="changeMode()"><a href="###">Mode &nbsp:&nbsp <i class="fas fa-lightbulb"></i></a></li>
                 <div class="marker"></div>
             </ul>
         </div>
@@ -211,8 +217,7 @@
     <script src="./javascript/nav.js"></script>
     <script src="./javascript/menu.js"></script>
     <script src="./javascript/jquery.js"></script>
-
-    <!--Start of Tawk.to Script-->
+    <script src="./javascript/ChangeLight.js"></script>
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function () {
@@ -224,12 +229,8 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
         const formsubmit = () => {
-            // document.querySelector("#contact > div > form > input[type=text]:nth-child(2)").value = "";
-            // document.querySelector("#contact > div > form > input[type=text]:nth-child(3)").value = "";
-            // document.querySelector("#contact > div > form > textarea").value = "";
             return true;
         }
     </script>
-    <!--End of Tawk.to Script-->
 </body>
 </html>

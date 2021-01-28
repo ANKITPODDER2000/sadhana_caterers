@@ -8,6 +8,10 @@
     align-items: center;
     flex-direction: row;
 }
+body.night .about{
+    background: #000;
+    color: #fff7;
+}
 .about .container{
     position: relative;
     width: 600px;
@@ -32,6 +36,9 @@
     width: 400px;
     box-shadow:  9px 9px 27px #c9c9c9, 
              -9px -9px 27px #ffffff;
+}
+body.night .about img{
+    box-shadow : 0 0 20px #00f4;
 }
 @media screen and (max-width:1180px){
     .about .container{

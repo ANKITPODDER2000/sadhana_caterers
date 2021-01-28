@@ -48,6 +48,9 @@
     color: #000;
     margin: 20px;
 }
+body.night .test .container .box{
+    background: #000;
+}
 .test .container .box img{
     position: relative;
     width: 80px;
@@ -58,6 +61,9 @@
     color: #000000;
     margin: 20px 0 0px;
     font-size: 14px;
+}
+body.night .test .container .box p{
+    color: #fff7;
 }
 .test .container .box p.name{
     font-weight: bold;
