@@ -15,7 +15,9 @@ body{
     font-family: 'Poppins', sans-serif;
     
 }
-
+body.night{
+    background: #000;
+}
 /* This is style for home section */
 .home{
     position: relative;

@@ -93,6 +93,9 @@ body.night .fixedbar.active ul li a{
 .fixedbar.active ul li a:hover{
     color:   #ff0054;
 }
+body.night .fixedbar.active ul li a:hover{
+    color: #ff0054;
+}
 /* Handberger */
 .fixedbar handberger{
     position: relative;
