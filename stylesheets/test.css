@@ -39,17 +39,17 @@
     position: relative;
     width: 320px;
     height: 400px;
-    background: #fff;
+    background: #fff5;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    color: #000;
     margin: 20px;
+    backdrop-filter: blur(2px);
 }
 body.night .test .container .box{
-    background: #000;
+    background: #0009;
 }
 .test .container .box img{
     position: relative;
@@ -63,7 +63,7 @@ body.night .test .container .box{
     font-size: 14px;
 }
 body.night .test .container .box p{
-    color: #fff7;
+    color: #fff9;
 }
 .test .container .box p.name{
     font-weight: bold;

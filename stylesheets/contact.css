@@ -130,7 +130,7 @@ copyright p{
 body.night copyright{
     background: #000;
     color: #fff8;
-    border-top: 1px solid #fff1;
+    border-top: 2px solid #fff1;
 }
 @media screen and (max-width:490px){
     copyright{
