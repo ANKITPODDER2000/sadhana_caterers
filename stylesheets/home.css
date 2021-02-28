@@ -120,3 +120,8 @@ body.night{
         font-size: 14px;
     }
 }
+@media screen and (max-width:370px){
+    .home h1{
+        font-size: 26px;
+    }
+}
