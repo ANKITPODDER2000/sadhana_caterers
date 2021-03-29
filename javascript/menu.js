@@ -1,15 +1,15 @@
 const hidemenu = document.querySelectorAll(".hide");
 const menulist = [
-    ["./images/menu/mutton kasha.jpg", "Mutton Kasha"],
+    ["./images/menu/Mutton Kosha sadhana caterers.png", "Mutton Kasha"],
     ["./images/menu/navaratna kari.jpg", "Navaratna Korma"],
-    ["./images/menu/panner2.jpg", "Paneer Butter Masala"],
+    ["./images/menu/best caterer in kolkata matar paneer.png", "Paneer Butter Masala"],
     ["./images/menu/salad.JPG", "Pasta Counter"],
-    ["./images/menu/hotsaladbar.JPG", "Hot Salad Bar"],
-    ["./images/menu/prawn.jpg", "Prawn Malaikari"],
+    ["./images/menu/hot salad bar sadhana catereres.png", "Hot Salad Bar"],
+    ["./images/menu/best caterers near me prawn malai curry.png", "Prawn Malaikari"],
     ["./images/menu/fry.jpg", "Fish Butter Fry"],
     ["./images/menu/chicken.jpg", "Chicken Chap"],
     ["./images/menu/mocktail.jpg", "Mocktail Counter"],
-    ["./images/menu/pan.jpg", "Pan"],
+    ["./images/menu/pan counter by sadhana caterers.png", "Pan"],
     ["./images/menu/tandoor.jpg", "Chicken Tandoor"],
     ["./images/menu/chatni.jpg", "Fruit Chutny"]
 ];
