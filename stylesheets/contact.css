@@ -33,18 +33,29 @@ body.night .contact{
 body.night .contact p a{
     color: #fff;
 }
+.contact .innerDiv{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .contact .container{
     position: relative;
-    margin-top: 40px;
-    padding-left: 100px;
-    width: 100%;
+    width: 500px;
 }
 .contact .container form{
     max-width: 500px;
     background: #fff9;
-    box-shadow: 0 18px 50px #1111;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     padding: 50px 30px;
     backdrop-filter: blur(1px);
+}
+iframe.maps{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 body.night .contact .container form{
     background: rgba(0,0,0,0.95);
@@ -99,17 +110,17 @@ body.night .contact .container form textarea{
 }
 /* Make Contact Responsive */
 @media screen and (max-width:750px){
-    #contact > div{
+    #contact > section > div{
         padding: 0;
     }
-    #contact > div > form{
+    #contact > section > div > form{
         width: 80%;
         display: block;
         margin: 0 auto;
     }
 }
 @media screen and (max-width:510px){
-    #contact > div > form{
+    #contact > section > div > form{
         width: 100%;
         padding: 30px 15px;
     }
@@ -143,9 +154,39 @@ body.night copyright{
         text-align: center;
     }
 }
-#contact > div > form > div{
+#contact >.innerDiv > div > form > div{
     background: #fff !important;
 }
-body.night #contact > div > form > div{
+body.night #contact > div > form  div{
     background: #000 !important;
+}
+
+@media screen and (max-width : 1300px){
+    /* .contact .innerDiv{
+        flex-direction: column;
+    } */
+    .contact .innerDiv >.container{
+        margin-bottom: 50px;
+    }
+    .contact .innerDiv >iframe.maps{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width : 710px){
+    .contact .innerDiv >iframe.maps{
+        width: 80% !important;
+    }
+} 
+@media screen and (max-width : 500px){
+    .contact .innerDiv >iframe.maps{
+        width: 90% !important;
+        height: 350px !important;
+    }
+} 
+@media screen and (max-width : 350px){
+    .contact .innerDiv >iframe.maps{
+        width: 90% !important;
+        height: 250px !important;
+    }
 }
